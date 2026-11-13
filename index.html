@@ -4,6 +4,8 @@
   <title>
     portfolio
   </title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   *{
@@ -444,6 +446,207 @@ transform:rotate(0deg);
   .contact-form .btn:hover {
     background-color: darkgreen;
   }
+/* Global Responsive Fix */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Tablet Responsive */
+@media (max-width: 992px) {
+
+  .navbar {
+    padding: 20px 5%;
+  }
+
+  .navbar ul li {
+    margin-left: 18px;
+  }
+
+  .navbar ul li a {
+    font-size: 16px;
+  }
+
+  .home {
+    padding: 100px 5% 40px;
+    gap: 30px;
+  }
+
+  .home-info h1 {
+    font-size: 42px;
+  }
+
+  .home-info h2 {
+    font-size: 25px;
+  }
+
+  .home-img .img-box {
+    width: 35vw;
+    height: 35vw;
+  }
+
+  .about,
+  .portfolio,
+  .services {
+    padding: 80px 5%;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+  /* Navbar */
+  .navbar {
+    padding: 15px 4%;
+    flex-direction: column;
+    gap: 10px;
+    background: #1f242d;
+  }
+
+  .navbar .logo {
+    font-size: 24px;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navbar ul li {
+    margin: 0;
+  }
+
+  .navbar ul li a {
+    font-size: 13px;
+  }
+
+  /* Home Section */
+  .home {
+    height: auto;
+    min-height: 100vh;
+    padding: 150px 6% 50px;
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 35px;
+  }
+
+  .home-info {
+    width: 100%;
+  }
+
+  .home-info h1 {
+    font-size: 34px;
+  }
+
+  .home-info h2 {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  .home-info p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* Profile Image */
+  .home-img .img-box {
+    width: 65vw;
+    height: 65vw;
+    max-width: 280px;
+    max-height: 280px;
+  }
+
+  .home-img .img-box::before,
+  .home-img .img-box::after {
+    width: 350px;
+    height: 350px;
+  }
+
+  .home-img .img-box .img-item img {
+    top: 15px;
+  }
+
+  /* Buttons */
+  .home-info .btn-sci {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .home-info .btn-sci .sci {
+    margin-left: 0;
+  }
+
+  .btn {
+    padding: 9px 20px;
+    font-size: 14px;
+  }
+
+  /* About */
+  .about,
+  .portfolio,
+  .services {
+    padding: 70px 6%;
+  }
+
+  .about h2,
+  .portfolio .section-title,
+  .services .section-title {
+    font-size: 32px;
+  }
+
+  .about p {
+    font-size: 15px;
+  }
+
+  /* Portfolio */
+  .portfolio-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .portfolio-box img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  /* Services */
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-box {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Contact Form */
+  .contact-form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  /* YouTube Video */
+  iframe {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  /* Background Animation */
+  .bars-animation {
+    height: 100%;
+  }
+
+}
 
   
  </style>
